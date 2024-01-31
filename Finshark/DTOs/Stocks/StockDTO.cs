@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Finshark.DTOs.Comments;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Finshark.DTOs.Stocks
 {
@@ -11,5 +12,6 @@ namespace Finshark.DTOs.Stocks
         public decimal LastDiv { get; set; }
         public string Industry { get; set; } = string.Empty;
         public long MarketCap { get; set; }
+        public List<CommentDTO> Comments { get; set; }
     }
 }
